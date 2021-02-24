@@ -31,6 +31,10 @@ img {
     height: auto;
 }
 
+h2 {
+    margin: 0;
+}
+
 /* Link */
 .link:hover {
     color: #81b3d2;
@@ -140,3 +144,56 @@ img {
     margin-bottom: 55px;
 }
 
+/* Main Page */
+.flex-reason {
+    display: flex;
+}
+
+.flex-reason-description {
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.flex-reason-description h2 {
+    font-size: 21px;
+    padding-top: 45px;
+    margin-bottom: 20px;
+}
+
+.flex-reason-description .number {
+    display: block;
+    margin-bottom: 22px;
+    font-weight: 400;
+    position: relative;
+}
+
+.flex-reason-description .number::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 44%;
+    width: 8px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.flex-reason-description .number::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 44%;
+    width: 8px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.flex-reason-description p {
+    font-weight: 400;
+    line-height: 21px;
+    font-size: 14px;
+    padding: 0 60px;
+}
+
+.flex-reason-description .padding {
+    padding: 0 50px;
+}
