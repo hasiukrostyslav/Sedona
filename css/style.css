@@ -1,7 +1,7 @@
-/* * {
+* {
     margin: 0;
     padding: 0;
-} */
+}
 
 body {
     margin: 0;
@@ -34,6 +34,18 @@ img {
 h2 {
     margin: 0;
 }
+
+/* .visually-hidden {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+} */
+
 
 /* Link */
 .link:hover {
@@ -100,6 +112,7 @@ h2 {
     background-image: url(../img/Mask.png);
     background-position: bottom center;
     background-repeat: no-repeat;
+    position: relative;
 }
 
 .showcase-img {
@@ -113,7 +126,6 @@ h2 {
 
 .showcase-img:nth-child(2) {
     margin-bottom: 52px;
-    position: relative;
 }
 
 .showcase-img:nth-child(3) {
@@ -170,7 +182,7 @@ h2 {
 .flex-reason-description .number::before {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 13px;
     right: 44%;
     width: 8px;
     height: 1px;
@@ -180,7 +192,7 @@ h2 {
 .flex-reason-description .number::after {
     content: "";
     position: absolute;
-    top: 12px;
+    top: 13px;
     left: 44%;
     width: 8px;
     height: 1px;
@@ -196,4 +208,142 @@ h2 {
 
 .flex-reason-description .padding {
     padding: 0 50px;
+}
+
+.flex-items {
+    display: flex;
+    position: relative;
+}
+
+.flex-items-container {
+    background-color: #ffffff;
+}
+
+.flex-items-container:first-child::after {
+    content: url(../img/icon-1.png);
+    position: absolute;
+    top: 60px;
+    left: 165px;
+}
+
+.flex-items-container:nth-child(2)::after {
+    content: url(../img/icon-3.png);
+    position: absolute;
+    top: 62px;
+    left: 580px;
+}
+
+.flex-items-container:last-child::after {
+    content: url(../img/icon-2.png);
+    position: absolute;
+    top: 56px;
+    left: 980px;
+}
+
+.flex-items-container h2 {
+    padding-top: 160px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.flex-items-container p {
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 83px;
+    padding: 0 50px;
+}
+
+.flex-items-discription {
+    background-color: #eeeeee;
+}
+
+.flex-items-discription h2 {
+    color: #000000;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.flex-items-discription .number {
+    color: #333;
+}
+
+.flex-items-discription .number::after {
+    background-color: #333;
+}
+
+.flex-items-discription .number::before {
+    background-color: #333;
+}
+
+.flex-items-discription p {
+    color: #333;
+    margin-bottom: 60px;
+}
+
+/* Appointment */
+.appointment {
+    background-color: #fff;
+}
+
+.appointment .appointment-heading {
+    color: #000;
+    font-size: 30px;
+    line-height: 36px;
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+.appointment p {
+    color: #333;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.appointment .btn {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    background-color: #766357;
+    padding: 33px 140px;
+    border: none;
+    cursor: pointer;
+}
+
+.appointment .btn:hover {
+    background-color: #604e43;
+}
+
+.appointment .btn:active {
+    background-color: #503e33;
+    color: #7a6f69;
+}
+
+.map {
+    position: relative;
+}
+
+/* footer */
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.main-footer .social {
+    list-style: none;
+    /* display: flex; */
+}
+
+.main-footer .visit {
+    font-size: 21px;
+    line-height: 26px;
 }
