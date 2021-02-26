@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sedona</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normailze.css">
@@ -96,7 +96,7 @@
 
       <section class="map">
         <img class="visually-hidden1" src="./img/map.png" alt="map" width="1200" height="593">
-        <footer class="main-footer">
+        <footer class="main-footer home-footer">
           <p class="visit">&#35Visitsedona</p>
           <ul class="social">
             <li class="social-list"> 
@@ -144,7 +144,25 @@
     </main>
 
     <section class="modal">
-      
+      <form action="" method="post" class="booking-form">
+        <p>
+          <label for="date-arrival">Дата заезда:</label>
+          <input type="date" id="date-arrival" class="arrival-date-user">
+        </p>
+        <p>
+          <label for="date-departure">Дата выезда:</label>
+          <input type="date" id="date-departure" class="departure-date-user">
+        </p>
+        <p>
+          <label for="adult-number"></label>
+          <input type="number" name="adult" id="adult-number" min="1" value="1">
+        </p>
+        <p>
+          <label for="children-number"></label>
+          <input type="number" name="children" id="children-number" min="0" value="0">
+        </p>
+        <button type="submit">Найти</button>
+      </form>
     </section>
   </div>
 </body>
