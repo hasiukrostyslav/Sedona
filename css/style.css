@@ -312,11 +312,13 @@ h2 {
 .appointment .btn {
     text-transform: uppercase;
     color: #fff;
+    width: 568px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    font-family: inherit;
     background-color: #766357;
-    padding: 33px 140px;
+    padding: 33px 139px;
     border: none;
     cursor: pointer;
 }
@@ -402,15 +404,121 @@ h2 {
     margin-right: 125px;
 }
 
+
+
 .academy .html-link::after {
-    content: url(../img/html.png);
+    content: "";
     position: absolute;
     top: -5px;
     right: 165px;
     width: 115px;
     height: 41px;
+    background-image: url(../img/html.png);
 }
 
-/* Add hover and active style to html academy links */
+.academy .html-link:hover:after {
+    background-image: url(../img/html-hover.png);
+} 
+
+.academy .html-link:active:after {
+    background-image: url(../img/html-active.png);
+} 
 
 
+/* Modal */
+.modal {
+   width: 568px;
+   position: absolute;
+   top: 0;
+   left: 316px;
+   background-color: #fff;
+   padding: 55px;
+   text-align: left;
+}
+
+.booking-form label {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.booking-form input {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.arrival-date-user {
+    margin-left: 22px;
+}
+
+.departure-date-user {
+    margin-left: 19px;
+}
+
+.arrival-date-user,
+.departure-date-user {
+    position: relative;
+    margin-bottom: 30px;
+    padding: 6px 45px 6px 15px;
+    width: 340px;
+}
+
+.arrival-date-user::after,
+.departure-date-user::after {
+    content: "";
+    position: absolute;
+
+}
+
+.quantity-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.quantity input {
+    width: 114px;
+    padding: 6px 39px;
+}
+
+.quantity:first-child {
+    width: 227px;
+}
+
+.quantity:last-child {
+    width: 179px;
+}
+
+.adult-number {
+    margin-left: 30px;
+}
+
+.children-number {
+    margin-left: 21px;
+}
+
+.btn-submit {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    background-color: #81b3d2;
+    padding: 16px 196px;
+}
+
+.btn-submit:hover {
+    background-color: #669ec0;
+}
+
+.btn-submit:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.7);
+}
