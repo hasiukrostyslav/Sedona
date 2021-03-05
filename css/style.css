@@ -444,11 +444,21 @@ h2 {
 
 .booking-form input {
     font-family: inherit;
+    text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     line-height: 26px;
     background-color: #f2f2f2;
     border: none;
+}
+
+.booking-form input:hover {
+    background-color: #ebebeb;
+}
+
+.booking-form input:focus {
+    background-color: #fff;
+    outline: 2px solid #e5e5e5;
 }
 
 .arrival-date-user {
@@ -501,9 +511,6 @@ input[type=number] {
     text-align: center;
   }
 
-
-
-
 .quantity:first-child {
     width: 227px;
     margin-right: 53px;
@@ -521,6 +528,8 @@ input[type=number] {
 .children-number {
     margin-left: 23px;
 }
+
+/* Add button - and + */
 
 .btn-submit {
     text-transform: uppercase;
@@ -543,3 +552,5 @@ input[type=number] {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.7);
 }
+
+
