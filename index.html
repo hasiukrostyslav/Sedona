@@ -137,33 +137,37 @@
               <p class="academy">
                 <a class="html-link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">Website by 
                   <span class="visually-hidden">html academy</span>
-                </a></p>
+                </a>
+              </p>
           </div>
         </footer>
+        <section class="modal">
+          <form action="" method="post" class="booking-form">
+            <p>
+              <label for="date-arrival">Дата заезда:</label>
+              <input type="text" id="date-arrival" class="arrival-date-user" value="24 апреля 2017">
+            </p>
+            <p>
+              <label for="date-departure">Дата выезда:</label>
+              <input type="text" id="date-departure" class="departure-date-user" value="4 июля 2017">
+            </p>
+            <div class="quantity-container">
+              <p class="quantity">
+                <label for="adult-number">Взрослые:</label>
+                <input type="number" name="adult" id="adult-number" min="1" value="2" class="adult-number">
+              </p>
+              <p class="quantity">
+                <label for="children-number">Дети:</label>
+                <input type="number" name="children" id="children-number" min="0" value="0" class="children-number">
+              </p>
+            </div>
+            <button type="submit" class="btn-submit">Найти</button>
+          </form>
+        </section>
       </section>
     </main>
 
-    <section class="modal">
-      <form action="" method="post" class="booking-form">
-        <p>
-          <label for="date-arrival">Дата заезда:</label>
-          <input type="date" id="date-arrival" class="arrival-date-user">
-        </p>
-        <p>
-          <label for="date-departure">Дата выезда:</label>
-          <input type="date" id="date-departure" class="departure-date-user">
-        </p>
-        <p>
-          <label for="adult-number"></label>
-          <input type="number" name="adult" id="adult-number" min="1" value="1">
-        </p>
-        <p>
-          <label for="children-number"></label>
-          <input type="number" name="children" id="children-number" min="0" value="0">
-        </p>
-        <button type="submit">Найти</button>
-      </form>
-    </section>
+    
   </div>
 </body>
 </html>
