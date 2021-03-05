@@ -477,6 +477,7 @@ h2 {
 .quantity-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
     margin-bottom: 60px;
 }
 
@@ -485,8 +486,28 @@ h2 {
     padding: 6px 39px;
 }
 
+/* Hide Arrows From Input Number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    display: none;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+    text-align: center;
+  }
+
+
+
+
 .quantity:first-child {
     width: 227px;
+    margin-right: 53px;
+
 }
 
 .quantity:last-child {
@@ -494,11 +515,11 @@ h2 {
 }
 
 .adult-number {
-    margin-left: 30px;
+    margin-left: 37px;
 }
 
 .children-number {
-    margin-left: 21px;
+    margin-left: 23px;
 }
 
 .btn-submit {
