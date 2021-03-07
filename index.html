@@ -146,19 +146,25 @@
             <p>
               <label for="date-arrival">Дата заезда:</label>
               <input type="text" id="date-arrival" class="arrival-date-user" value="24 апреля 2017">
+              <button type="button" class="btn-calendar">Calendar</button>
             </p>
             <p>
               <label for="date-departure">Дата выезда:</label>
               <input type="text" id="date-departure" class="departure-date-user" value="4 июля 2017">
+              <button type="button" class="btn-calendar">Calendar</button>
             </p>
             <div class="quantity-container">
               <p class="quantity">
                 <label for="adult-number">Взрослые:</label>
-                <input type="number" name="adult" id="adult-number" min="1" value="2" class="adult-number">
+                <button type="button" class="btn-minus">Minus</button>
+                <input type="number" name="adult" id="adult-number" min="1" max="99" value="2" class="adult-number">
+                <button type="button" class="btn-plus">Plus</button>
               </p>
               <p class="quantity">
                 <label for="children-number">Дети:</label>
-                <input type="number" name="children" id="children-number" min="0" value="0" class="children-number">
+                <button type="button" class="btn-minus">Minus</button>
+                <input type="number" name="children" id="children-number" min="0" max="99" value="0" class="children-number">
+                <button type="button" class="btn-plus">Plus</button>
               </p>
             </div>
             <button type="submit" class="btn-submit">Найти</button>
