@@ -438,6 +438,10 @@ h2 {
    text-align: left;
 }
 
+.modal p {
+    position: relative;
+}
+
 .booking-form label {
     font-size: 14px;
     line-height: 26px;
@@ -454,11 +458,11 @@ h2 {
     border: none;
 }
 
-.booking-form input:hover {
+.booking-form input[type=text]:hover {
     background-color: #ebebeb;
 }
 
-.booking-form input:focus {
+.booking-form input[type=text]:focus {
     background-color: #fff;
     outline: 2px solid #e5e5e5;
 }
@@ -471,19 +475,36 @@ h2 {
     margin-left: 19px;
 }
 
-.arrival-date-user,
-.departure-date-user {
+.booking-form input[type=text] {
     position: relative;
     margin-bottom: 30px;
     padding: 6px 45px 6px 15px;
     width: 340px;
 }
 
-.arrival-date-user::after,
-.departure-date-user::after {
+/* Add calendar button */
+.btn-calendar {
     content: "";
     position: absolute;
+    top: 8px;
+    right: 12px;
+    width: 21px;
+    height: 22px;
+    padding: 0;
+    font-size: 0;
+    border: none;
+    background: url(../img/calendar.png) no-repeat;
+    cursor: pointer;
+}
 
+.btn-calendar:hover {
+    background: url(../img/calendar-1.png) no-repeat;
+}
+
+.btn-calendar:active,
+.btn-calendar:focus {
+    background: url(../img/calendar-2.png) no-repeat;
+    outline: none;
 }
 
 .quantity-container {
@@ -492,10 +513,24 @@ h2 {
     flex-wrap: nowrap;
     margin-bottom: 60px;
 }
+.quantity {
+    position: relative;
+}
 
-.quantity input {
-    width: 114px;
-    padding: 6px 39px;
+.quantity:first-child label {
+    margin-right: 39px;
+}
+
+.quantity:last-child label {
+    margin-right: 27px;
+}
+
+.quantity input[type=number] {
+    width: 36px;
+    padding: 6px 0;
+    margin: 0 -4px 0 -4px;
+    outline: none;
+    display: inline-block;
 }
 
 /* Hide Arrows From Input Number */
@@ -513,25 +548,54 @@ input[type=number] {
     text-align: center;
   }
 
-.quantity:first-child {
-    width: 227px;
-    margin-right: 53px;
-
+.quantity button {
+    position: relative;
+    margin: 0;
+    border: none;
+    width: 39px;
+    height: 38px;
+    cursor: pointer;
+    vertical-align: top;
+    outline: none;
+    font-size: 0;
+    background-color: #f2f2f2;
 }
 
-.quantity:last-child {
-    width: 179px;
+.btn-minus::before,
+.btn-plus::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    width: 11px;
+    height: 3px;
+    background-color: #a9a9a9;
 }
 
-.adult-number {
-    margin-left: 37px;
+.btn-plus::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 19px;
+    width: 3px;
+    height: 11px;
+    background-color: #a9a9a9;
 }
 
-.children-number {
-    margin-left: 23px;
+.btn-minus:hover::before,
+.btn-plus:hover::before,
+.btn-plus:hover::after,
+.btn-minus:focus::before,
+.btn-plus:focus::before,
+.btn-plus:focus::after {
+    background-color: #000;
 }
 
-/* Add button - and + */
+.btn-minus:active::before,
+.btn-plus:active::before,
+.btn-plus:active::after {
+    background-color: #81b3d2;
+}
 
 .btn-submit {
     text-transform: uppercase;
