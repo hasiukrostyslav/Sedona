@@ -18,9 +18,12 @@ body {
 
 html,
 body {
-    min-height: 2762px;
     min-width: 1200px;
     background-color: #f2f2f2;
+}
+
+.home-page {
+    min-height: 2762px;
 }
 
 a {
@@ -86,6 +89,9 @@ h2 {
     width: 100%;
     position: relative;
     background-color: #ffffff;
+}
+
+.main-navigation-margin {
     margin-bottom: 76px;
 }
 
@@ -620,3 +626,186 @@ input[type=number] {
 }
 
 
+/* Inner page */
+.inner-page {
+    min-height: 933px;
+}
+
+.inner-header {
+    background-image: url(../img/filter\ background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.hotel-form {
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 30px;
+    border: none;
+}
+
+.form-checkbox {
+    display: flex;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.form-checkbox fieldset {
+    border: none;
+}
+
+.form-checkbox fieldset:first-child  {
+    margin-right: 115px;
+}
+
+.form-checkbox legend {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.form-list {
+    list-style: none;
+    text-align: left;
+}
+
+.form-list li {
+    margin-top: 22px;
+}
+
+.form-list label {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.filter-range {
+    width: 330px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-right: 70px;
+}
+
+.filter-range-title {
+    margin-bottom: 9px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.price-controls {
+    position: relative;
+    height: 36px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    border-radius: 2px;
+    font-size: 0;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 21px;
+    vertical-align: bottom;
+    cursor: pointer;
+    
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 50%;
+    padding-left: 30px;
+}
+
+.price-controls .min-price {
+    
+}
+
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #fff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -7px;
+    width: 20px;
+    height: 20px;
+    background: #ababab;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 21px;
+    color: #fff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-transparent:hover {
+    color: #000;
+    background: #fff;
+}

@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="./css/normailze.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="inner-page">
   <div class="container">
-    <header class="main-header">
+    <header class="main-header inner-header">
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="navigation-item"><a class="link" href="#">Информация</a></li>
@@ -19,12 +19,66 @@
         </ul>
         <a class="logo-link" href="index.html"><img src="./img/logo.png" alt="Sedona logo" width="138" height="70"></a>
       </nav>
+
+      <section class="inner-form">
+        <form class="hotel-form" method="post">
+          <div class="form-checkbox">
+            <fieldset>
+              <legend>Инфраструктура:</legend>
+              <ul class="form-list">
+                <li>
+                  <input type="checkbox" name="pool" value="pool" id="infrastructure-pool" checked>
+                  <label for="infrastructure-pool">Бассейн</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="parking" value="parking" id="infrastructure-parking">
+                  <label for="infrastructure-parking">Парковка</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="wifi" value="wifi" id="infrastructure-wifi">
+                  <label for="infrastructure-wifi">Wi-Fi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Тип Жилья:</legend>
+              <ul class="form-list">
+                <li>
+                  <input type="checkbox" name="hotel" value="hotel" id="type-hotel" checked>
+                  <label for="type-hotel">Гостиница</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="motel" value="motel" id="type-motel" checked>
+                  <label for="type-motel">Мотель</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="apartment" value="apartment" id="type-apartment" checked>
+                  <label for="type-apartment">Апартамениты</label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+          <div class="filter-range">
+            <p class="filter-range-title">Стоимость в сутки (Р):</p>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button type="submit" class="btn-transparent">Показать</button>
+          </div>
+        </form>
+      </section>
     </header>
+      <main>
 
-    <main>
-
-    </main>
-    
+      </main>
     <footer class="main-footer">
       <p class="visit">&#35Visitsedona</p>
       <ul class="social">
