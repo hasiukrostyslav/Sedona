@@ -27,15 +27,15 @@
               <legend>Инфраструктура:</legend>
               <ul class="form-list">
                 <li>
-                  <input type="checkbox" name="pool" value="pool" id="infrastructure-pool" checked>
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="pool" value="pool" id="infrastructure-pool" checked>
                   <label for="infrastructure-pool">Бассейн</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="parking" value="parking" id="infrastructure-parking">
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="parking" value="parking" id="infrastructure-parking">
                   <label for="infrastructure-parking">Парковка</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="wifi" value="wifi" id="infrastructure-wifi">
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="wifi" value="wifi" id="infrastructure-wifi">
                   <label for="infrastructure-wifi">Wi-Fi</label>
                 </li>
               </ul>
@@ -44,15 +44,15 @@
               <legend>Тип Жилья:</legend>
               <ul class="form-list">
                 <li>
-                  <input type="checkbox" name="hotel" value="hotel" id="type-hotel" checked>
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="hotel" value="hotel" id="type-hotel" checked>
                   <label for="type-hotel">Гостиница</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="motel" value="motel" id="type-motel" checked>
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="motel" value="motel" id="type-motel" checked>
                   <label for="type-motel">Мотель</label>
                 </li>
                 <li>
-                  <input type="checkbox" name="apartment" value="apartment" id="type-apartment" checked>
+                  <input class="visually-hidden filter-checkbox" type="checkbox" name="apartment" value="apartment" id="type-apartment" checked>
                   <label for="type-apartment">Апартамениты</label>
                 </li>
               </ul>
@@ -76,9 +76,26 @@
         </form>
       </section>
     </header>
-      <main>
 
-      </main>
+    <main>
+      <section class="search">
+        <div class="search-flex-container">
+          <p class="search-heading">Найдено: 3</p>
+          <p class="search-sorting">Сортировка:</p>
+          <ul class="sort-list">
+            <li class="sort-list-item"><a class="current" href="#">По цене</a></li>
+            <li class="sort-list-item"><a class="not-current" href="#">По типу</a></li>
+            <li class="sort-list-item"><a class="not-current" href="#">По рейтингу</a></li>
+          </ul>  
+        </div>
+        <div>
+          <a href="#">button up</a>
+          <a href="#">button down</a>
+        </div>
+        
+      </section>
+    </main>
+
     <footer class="main-footer">
       <p class="visit">&#35Visitsedona</p>
       <ul class="social">

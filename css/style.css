@@ -684,8 +684,67 @@ input[type=number] {
     font-size: 14px;
     line-height: 21px;
     font-weight: 400;
-    margin-left: 15px;
+    margin-left: 40px;
+    position: relative;
+    cursor: pointer;
 }
+
+.filter-checkbox:hover + label {
+    color: #fff;
+}
+
+.filter-checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: -39px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/checkbox-off.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-checkbox:checked + label::before {
+    content: "";
+    position: absolute;
+    left: -39px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/checkbox-on.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-checkbox:disabled + label {
+    color: #6a6a6a;
+}
+
+.filter-checkbox:disabled + label::before {
+    content: "";
+    position: absolute;
+    left: -39px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/checkbox-off-dis.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-checkbox:disabled:checked + label {
+    color: #6a6a6a;
+}
+
+.filter-checkbox:disabled:checked + label::before {
+    content: "";
+    position: absolute;
+    left: -39px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/checkbox-on-dis.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
 
 .filter-range {
     width: 330px;
@@ -809,3 +868,43 @@ input[type=number] {
     color: #000;
     background: #fff;
 }
+
+/* Search */
+.search {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.search-flex-container .search-heading {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.sort-list {
+    list-style: none;
+}
+
+.search-flex-container .seacrh-sorting,
+.sort-list-item a {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+/* .sort-list-item .not-current {
+    color: #000;
+    opacity: 0.3;
+    border-bottom: 2px dotted #81b3d2;
+}
+
+.sort-list-item .current {
+    color: #81b3d2;
+}
+
+.sort-list-item a:hover {
+    color: #81b3d2;
+    opacity: 1;
+} */
