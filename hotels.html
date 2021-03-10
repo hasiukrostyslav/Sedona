@@ -81,18 +81,89 @@
       <section class="search">
         <div class="search-flex-container">
           <p class="search-heading">Найдено: 3</p>
-          <p class="search-sorting">Сортировка:</p>
-          <ul class="sort-list">
-            <li class="sort-list-item"><a class="current" href="#">По цене</a></li>
-            <li class="sort-list-item"><a class="not-current" href="#">По типу</a></li>
-            <li class="sort-list-item"><a class="not-current" href="#">По рейтингу</a></li>
-          </ul>  
+          <div class="sorting-container">
+            <p class="search-sorting">Сортировка:</p>
+            <ul class="sort-list">
+              <li class="sort-list-item"><a class="current sort-price" href="#">По цене</a></li>
+              <li class="sort-list-item"><a class="sort-type" href="#">По типу</a></li>
+              <li class="sort-list-item"><a class="sort-rating" href="#">По рейтингу</a></li>
+            </ul> 
+          </div>
         </div>
-        <div>
-          <a href="#">button up</a>
-          <a href="#">button down</a>
+        <div class="link-up-down">
+          <a class="link-up" href="#">Button up</a>
+          <a class="link-down link-down-active" href="#">Button down</a>
         </div>
-        
+      </section>
+
+      <section class="hotel-list">
+        <div class="hotel-review">
+          <div class="hotel-flex-data">
+            <div class="hotel-data">
+              <h2 class="hotel-data-name"><a href="#">Amara Resort & SPA</a></h2>
+              <p class="hotel-data-type">Гостиница</p>
+              <p class="hotel-data-price">От 4000 Р.</p>
+              <div class="btn-container">
+                <a class="btn-link-detail" href="#">Подробнее</a>
+                <button class="btn-reserve" type="button">Забронировать</button>
+              </div>
+            </div>
+            <img class="hotel-img" src="./img/hotel-1.jpg" alt="hotel-1" width="135" height="90">
+          </div>
+          <div class="hotel-flex-rating">
+            <div class="rating-stars">
+              <div class="one-extra-star">
+                <div class="two-extra-star"></div>
+              </div>
+            </div>
+            <div class="rating-text">
+              <p>Рейтинг: 8,5</p>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-review">
+          <div class="hotel-flex-data">
+            <div class="hotel-data">
+              <h2 class="hotel-data-name"><a href="#">Desert Quail Inn</a></h2>
+              <p class="hotel-data-type">Мотель</p>
+              <p class="hotel-data-price">От 3000 Р.</p>
+              <div class="btn-container">
+                <a class="btn-link-detail" href="#">Подробнее</a>
+                <button class="btn-reserve" type="button">Забронировать</button>
+              </div>
+            </div>
+            <img class="hotel-img" src="./img/hotel-2.jpg" alt="hotel-1" width="135" height="90">
+          </div>
+          <div class="hotel-flex-rating">
+            <div class="rating-stars">
+              <div class="one-extra-star">
+              </div>
+            </div>
+            <div class="rating-text">
+              <p>Рейтинг: 8,9</p>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-review">
+          <div class="hotel-flex-data">
+            <div class="hotel-data">
+              <h2 class="hotel-data-name"><a href="#">Villas At Poco Diablo</a></h2>
+              <p class="hotel-data-type">Апартаменты</p>
+              <p class="hotel-data-price">От 2000 Р.</p>
+              <div class="btn-container">
+                <a class="btn-link-detail" href="#">Подробнее</a>
+                <button class="btn-reserve" type="button">Забронировать</button>
+              </div>
+            </div>
+            <img class="hotel-img" src="./img/hotel-3.jpg" alt="hotel-1" width="135" height="90">
+          </div>
+          <div class="hotel-flex-rating">
+            <div class="rating-stars"></div>
+            <div class="rating-text">
+              <p>Рейтинг: 9,2</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
