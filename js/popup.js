@@ -15,7 +15,9 @@ var button = document.querySelector(".btn");
   form.addEventListener("submit", function (evt) {
     if (!arrival.value || !departure.value) {
       evt.preventDefault();
-      console.log("Нужно ввести дату Заезда и Выезда");
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
     }
   });
 
@@ -24,6 +26,7 @@ var button = document.querySelector(".btn");
       evt.preventDefault();
       if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
+        popup.classList.remove("modal-error");
       }
     }
   });
